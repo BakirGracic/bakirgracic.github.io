@@ -1,0 +1,137 @@
+.nav {
+   transition: background-color .3s;
+   height: 80px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 2;
+   .max-width {
+      .nav-content {
+         height: 80px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .logo {
+            display: block;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 2;
+         }
+         .nav-list {
+            display: flex;
+            align-items: center;
+            li {
+               margin-left: 20px;
+               font-weight: 400;
+               font-size: .85rem;
+               &:first-child {
+                  margin-left: 0;
+               }
+               a {
+                  color: #fff;
+                  transition: color .25s ease-in-out;
+               }
+               @media screen and (min-width: 1000px) {
+                  a:hover {
+                     color: #dc143c;
+                  }
+               }
+            }
+         }
+         .menu-btn {
+            z-index: 2;
+            display: none;
+            color: #fff;
+            i {
+               padding: 7.5px;
+            }
+         }
+      }
+   }
+}
+
+.nav-scroll {
+   background-color: #dc143c;
+   height: 60px;
+   .max-width {
+      .nav-content {
+         height: 60px;
+         .nav-list {
+            li {
+               @media screen and (min-width: 1000px) {
+                  a:hover {
+                     color: #fff;
+                  text-decoration: underline;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .nav {
+      .max-width {
+         .nav-content {
+            .nav-list {
+               height: 60vh;
+               position: fixed;
+               top: 0;
+               left: 0;
+               right: 0;
+               transform: translateY(-100%);
+               transition: transform .45s ease-in-out;
+               flex-direction: column;
+               justify-content: center;
+               background-color: #222;
+               li {
+                  padding: 10px 0;
+                  margin-left: 0;
+                  font-weight: 400;
+                  font-size: .9rem;
+               }
+            }
+            .nav-list-active {
+               transform: translateY(0);
+            }
+            .menu-btn {
+               display: block;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 734px) and (orientation: landscape) {
+   .nav {
+      .max-width {
+         .nav-content {
+            .nav-list {
+               flex-direction: row;
+               li {
+                  padding: 15px;
+                  font-size: .9rem;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+   .nav {
+      .max-width {
+         .nav-content {
+            .nav-list {
+               li {
+                  padding: 15px 0;
+                  font-size: 1.3rem;
+               }
+            }
+         }
+      }
+   }
+}

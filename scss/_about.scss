@@ -1,0 +1,109 @@
+.about {
+   .max-width {
+      .about-content {
+         display: flex;
+         .about-img {
+            width: 40%;
+            img {
+               margin: 0 auto;
+               display: block;
+               height: 400px;
+               width: 350px;
+               object-fit: cover;
+               border-radius: 5px;
+               box-shadow: 0 0 7px #222;
+            }
+         }
+         .about-text{
+            width: 60%;
+            color: #333;
+            align-self: center;
+            h2 {
+               margin-bottom: 15px;
+               font-size: 1.35rem;
+               font-weight: 400;
+            }
+            p {
+               margin-bottom: 25px;
+               font-weight: 300;
+               font-size: .9rem;
+            }
+            .resume-btn {
+               text-align: center;
+               a {
+                  color: #dc143c;
+                  border-radius: 10px;
+                  border: 2px solid #dc143c;
+                  padding: 10px 13px;
+                  font-size: .75rem;
+                  transition: color .3s;
+                  transition: background-color .3s;
+               }
+               @media screen and (min-width: 1000px) {
+                  a:hover {
+                     background-color: #dc143c;
+                     color: #fff;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .about {
+      .max-width {
+         .about-content {
+            flex-direction: column;
+            .about-img {
+               width: 100%;
+               margin-bottom: 40px;
+            }
+            .about-text{
+               width: 100%;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .about {
+      .max-width {
+         .about-content {
+            .about-img {
+               margin-bottom: 35px;
+               img {
+                  height: 350px;
+                  width: 300px;
+               }
+            }
+            .about-text{
+               h2 {
+                  font-size: 1.15rem;
+               }
+               p {
+                  font-size: .85rem;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .about {
+      .max-width {
+         .about-content {
+            .about-img {
+               margin-bottom: 35px;
+               img {
+                  height: 300px;
+                  width: 250px;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,38 @@
+.preloader-wrap {
+   z-index: 10;
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: #fff;
+   height: 100vh;
+   width: 100vw;
+   display: grid;
+   place-items: center;
+}
+
+.preloader-img {
+   display: block;
+   width: 90px;
+   height: 90px;
+}
+
+.preloader-disppear {
+   animation: preloader-dissapear-animation 1s forwards;
+}
+
+@keyframes preloader-dissapear-animation {
+   100% {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .preloader-img {
+      width: 75px;
+      height: 75px;
+   }
+}

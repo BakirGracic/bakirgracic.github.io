@@ -1,0 +1,178 @@
+.contact {
+   .max-width {
+      .contact-content {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 50px;
+         .left {
+            margin: auto 0;
+            .socials {
+               margin-bottom: 25px;
+               text-align: center;
+               a {   
+                  font-size: 2rem;
+                  margin: 15px;
+               }
+               .socials-github {
+                  color: #000;
+               }
+               .socials-stack {
+                  color: #EC7C23;
+               }
+               .socials-email {
+                  color: #008FAA;
+               }
+               .socials-phone {
+                  color: #333;
+               }
+               .socials-codepen {
+                  color: #000;
+               }
+               .socials-linkedin {
+                  color: #0A66C2;
+               }
+               .socials-discord {
+                  color: #5662F6;
+               }
+            }
+            .info {
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               margin: 15px 0;
+               i {
+                  font-size: 1.1rem;
+                  color: #dc143c;
+               }
+               p {
+                  color: #333;
+                  font-size: .75rem;
+                  margin-left: 15px;
+               }
+            }
+         }
+         .right {
+            .form {
+               input, textarea {
+                  width: 100%;
+                  border: 2px solid #d3d3d3;
+                  border-radius: 6px;
+                  outline: none;
+                  padding: 10px;
+                  font-size: .7rem;
+                  margin-bottom: 15px;
+               }
+               input:focus, textarea:focus {
+                  border-color: #b3b3b3;
+               }
+               .name-surname {
+                  display: flex;
+                  justify-content: space-between;
+                  .name {
+                     width: calc(50% - 7.5px);
+                  }
+                  .surname {
+                     width: calc(50% - 7.5px);
+                  }
+               }
+               .message {
+                  textarea {
+                     height: 125px;
+                     overflow-y: scroll;
+                     resize: none;
+                  }
+                  textarea::-webkit-scrollbar {
+                     border-radius: 3px;
+                     width: 5px;
+                  }
+                  textarea::-webkit-scrollbar-thumb {
+                     border-radius: 3px;
+                     background: #888;
+                  }
+                  textarea::-webkit-scrollbar-thumb:hover {
+                     background: #555;
+                  }
+               }
+               .submit {
+                  display: block;
+                  text-align: center;
+                  button {
+                     color: #fff;
+                     padding: 10px 15px;
+                     outline: none;
+                     font-size: .85rem;
+                     font-weight: 500;
+                     border-radius: 7px;
+                     cursor: pointer;
+                     background: #dc143c;
+                     border: 3px solid #dc143c;
+                     transition: background-color .3s;
+                  }
+                  button:hover {
+                     color: #dc143c;
+                     background: none;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1300px) {
+   .contact {
+      .max-width {
+         .contact-content {
+            gap: 35px;
+            .left {
+               .socials {
+                  a {   
+                     font-size: 1.75rem;
+                  }
+               }
+               .info {
+                  p {
+                     margin-left: 10px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .contact {
+      .max-width {
+         .contact-content {
+            grid-template-columns: 1fr;
+            gap: 25px;
+            .left {
+               .info {
+                  i {
+                     font-size: .9rem;
+                  }
+                  p {
+                     font-size: .65rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .contact {
+      .max-width {
+         .contact-content {
+            .left {
+               .socials {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+               }
+            }
+         }
+      }
+   }
+}

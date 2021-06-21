@@ -1,0 +1,58 @@
+.max-width {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+@media screen and (max-width: 1100px) {
+   .max-width {
+      padding: 0 20px;
+   }
+}
+@media screen and (max-width: 650px) {
+   .max-width {
+      padding: 0 15px;
+   }
+}
+
+section {
+   padding: 75px 0;
+}
+.title-on-white, .title-on-black {
+   padding-bottom: 75px;
+   font-weight: 500;
+   text-align: center;
+   font-size: 2.5rem;
+}
+.title-on-white {
+   color: #222;
+}
+.title-on-black {
+   color: #fff;
+}
+@media screen and (max-width: 1200px) {
+   section {
+      padding: 55px 0;
+   }
+   .title-on-white, .title-on-black {
+      padding-bottom: 55px;
+      font-size: 2rem;
+   }
+}
+@media screen and (max-width: 700px) {
+   section {
+      padding: 35px 0;
+   }
+   .title-on-white, .title-on-black {
+      padding-bottom: 35px;
+      font-size: 1.85rem;
+   }
+}
+
+.currentSection {
+   text-decoration: underline;
+}
+
+.black-bg {
+   background-color: #222;
+   color: #fff;
+}

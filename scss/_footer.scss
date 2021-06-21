@@ -1,0 +1,19 @@
+.footer {
+   cursor: default;
+   width: 100vw;
+   padding: 10px;
+   background-color: #222;
+   p {
+      text-align: center;
+      color: #fff;
+      font-size: .65rem;
+      a {
+         color: #dc143c;
+      }
+      @media screen and (min-width: 1000px) {
+         a:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
