@@ -4,7 +4,8 @@ const logo = document.getElementById("logo"),
       navList = document.getElementById("nav-list"),
       body = document.getElementById("body"),
       menuBtnIcon = document.getElementById("menu-btn-icon"),
-      navLinks = document.querySelectorAll(".nav-link");
+      navLinks = document.querySelectorAll(".nav-link"),
+      cards = document.querySelectorAll(".p-l");
 let   navListOpen = false;
 
 
@@ -12,6 +13,18 @@ let   navListOpen = false;
 logo.onclick = () => {
    location.reload();
 }
+
+function card1() { window.open("https://www.planet-digi.weebly.com/", "_blank"); }
+function card2() { window.open("https://bakirgracic.github.io/vaktija/", "_blank"); }
+function card3() { window.open("https://bakirgracic.github.io/lnma/", "_blank"); }
+function card4() { window.open("https://www.youtube.com/watch?v=6gkoDQUQSLc", "_blank"); }
+
+console.log(cards);
+
+cards[0].onclick = () => { card1(); }
+cards[1].onclick = () => { card2(); }
+cards[2].onclick = () => { card3(); }
+cards[3].onclick = () => { card4(); }
 
 // Menu Button Click (drop down menu list, disable scrolling, change menu icon)
 menuBtn.onclick = () => {
