@@ -14,12 +14,10 @@ logo.onclick = () => {
    location.reload();
 }
 
-function card1() { window.open("https://www.planet-digi.weebly.com/", "_blank"); }
-function card2() { window.open("https://bakirgracic.github.io/vaktija/", "_blank"); }
-function card3() { window.open("https://bakirgracic.github.io/lnma/", "_blank"); }
-function card4() { window.open("https://www.youtube.com/watch?v=6gkoDQUQSLc", "_blank"); }
-
-console.log(cards);
+function card1() { window.open("https://bakirgracic.github.io/vaktija/", "_blank"); }
+function card2() { window.open("https://www.planet-digi.weebly.com/", "_blank"); }
+function card3() { window.open("https://www.youtube.com/watch?v=6gkoDQUQSLc", "_blank"); }
+function card4() { window.open("https://aneagoie.github.io/robofriends/", "_blank"); }
 
 cards[0].onclick = () => { card1(); }
 cards[1].onclick = () => { card2(); }
