@@ -1,4 +1,4 @@
 # bakirgracic.github.io
 Personal website
 
-https://bakirg.com
+https://bakirg.dev
