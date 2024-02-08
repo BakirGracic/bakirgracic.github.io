@@ -1,3 +1,4 @@
 # bakirgracic.github.io
 
-https://bakir.io
+Moved to<br />
+[https://bakir.dev](https://bakir.dev/)
